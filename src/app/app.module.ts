@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { MainStartComponent } from './main-start/main-start.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,15 @@ import { MainStartComponent } from './main-start/main-start.component';
     MenuComponent,
     ImprintComponent,
     DataProtectionComponent,
-    MainStartComponent
+    MainStartComponent,
+    MySkillsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
