@@ -1,4 +1,25 @@
 body{
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 36px;
+}
+p{
+    font-size: 18px;
+}
+.primary{
+    color: #fa2759!important;
+}
+.secondary{
+    color: #2DFCD8;
+}
+.grey{
+    color: #1a1a1a;
+}
+.black{
+    color: #000000;
 }

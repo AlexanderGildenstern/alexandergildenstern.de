@@ -7,6 +7,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 import { MenuComponent } from './menu/menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { MainStartComponent } from './main-start/main-start.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     SlideshowComponent,
     MenuComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    MainStartComponent
   ],
   imports: [
     BrowserModule,
