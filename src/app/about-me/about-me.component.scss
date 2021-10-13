@@ -1,0 +1,38 @@
+.about-me-bg {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #1a1a1a;
+
+    img {
+        width: 35rem;
+        height: 30rem;
+        object-fit: cover;
+        margin: 20px;
+    }
+}
+
+.about-me-top {
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    img {
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+        margin-right: 50px;
+    }
+}
+.about-me-img {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.about-me-text {
+    width: 50vw;
+    p {
+        padding: 0px 120px 0px 50px;
+        text-align: center;
+    }
+}

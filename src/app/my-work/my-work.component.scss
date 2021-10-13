@@ -1,0 +1,14 @@
+.my-work-bg {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+
+    img {
+        width: 40rem;
+        height: 30rem;
+        object-fit: cover;
+        margin: 20px;
+    }
+}

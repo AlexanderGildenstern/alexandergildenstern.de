@@ -25,3 +25,31 @@ p{
 .black{
     color: #000000;
 }
+.btn-secondary {
+    padding: 30px 90px;
+    background-color: transparent;
+    color: #2dfcd8;
+    font-size: 24px;
+    margin-top: 30px;
+    border: 2px solid #2dfcd8;
+
+    &:hover {
+        color: white;
+        background-color: #2dfcd8;
+    }
+}
+.btn-primary {
+    padding: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    margin-top: 30px;
+    border: 2px solid #fa2759;
+    width: 200px;
+    margin: 50px 5px;
+
+    &:hover {
+        color: black;
+        background-color: #fa2759;
+    }
+}

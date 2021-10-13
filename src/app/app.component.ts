@@ -7,6 +7,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
-  constructor(public router: Router) { }  // public kann von überall geändert werden, router wird eingebunden.
+    constructor(public router: Router) {  }  // public kann von überall geändert werden, router wird eingebunden
 }
