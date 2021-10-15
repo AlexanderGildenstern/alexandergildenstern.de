@@ -1,9 +1,7 @@
-<app-menu [darkMode]="router.url !== '/' "></app-menu>
+<app-menu [darkMode]="router.url == '/imprint' || router.url == '/data-protection'"></app-menu>
 <!-- menu.html einbinden,"if Else abfrage" darkMode ist true, wenn router.url  kein / hat  -->
-<div [class.container]="router.url !== '/'">
+
+<div [class.container]="router.url == '/imprint' || router.url == '/data-protection'">   <!-- div um eine Klasse hinzuzufügen, zwei url`s werden überprüft -->
     <router-outlet></router-outlet> <!-- link für imprint -->
 </div>
-<app-main-start></app-main-start>
-<app-my-skills></app-my-skills>
-<app-my-work></app-my-work>
-<app-about-me></app-about-me>
+

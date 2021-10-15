@@ -1,0 +1,63 @@
+.contact-me-bg {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #757575;
+
+    textarea, input {
+        color: #ffffff;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        color: white;
+        sup{
+            color: #fa2759;
+        }
+        label{
+            padding: 16px 0;
+            font-size: 16px;
+        }
+
+        input {
+            height: 40px;
+            background-color: #1a1a1a;
+            border-color: #1a1a1a;
+            font-size: 16px;
+            padding-left: 16px;
+        }
+
+        textarea {
+            background-color: #1a1a1a;
+            border-color: #1a1a1a;
+            font-size: 16px;
+            padding-left: 16px;
+            resize: none;
+        }
+    }
+
+    h2 {
+        color: #2dfcd8;
+    }
+    a {
+        color: #2dfcd8;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.btn-send {
+    width: 700px;
+    text-align: end;
+}
