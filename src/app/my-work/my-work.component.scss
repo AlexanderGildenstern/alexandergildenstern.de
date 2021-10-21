@@ -5,10 +5,39 @@
     background-color: black;
     text-align: center;
 
+    button {
+        transition: 125ms all ease-in-out;
+        &:hover {
+            transition: 125ms all ease-in-out;
+        }
+    }
+
     img {
         width: 40rem;
         height: 30rem;
         object-fit: cover;
         margin: 20px;
+    }
+}
+.my-work-btn{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .my-work-btn{
+        display: flex;
+    }
+    .my-work-bg {
+        button {
+            width: 150px;
+            margin: 10px 5px;
+            padding: 10px;
+        }
+        img{
+            width: calc(100vw - 40px);
+            height: auto;
+            margin: 10px 0;
+        }
     }
 }

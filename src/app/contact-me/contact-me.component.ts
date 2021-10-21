@@ -16,5 +16,5 @@ export class ContactMeComponent implements OnInit {
   contactForm() {
     alert('message is send');
   }
-
+  isDisabled = true;
 }

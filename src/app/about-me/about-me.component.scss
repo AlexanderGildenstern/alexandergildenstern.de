@@ -66,3 +66,47 @@
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 800px){
+    
+    .about-me-top{
+        display: block;
+
+        .about-me-img{
+            justify-content: center;
+            width: 100vw;
+        }
+
+        img{
+            margin: 75px 0 20px 0;
+        }
+        .about-me-text{
+            width: 100vw;
+            p{
+                padding: 0px 20px 0px 20px;
+            }
+        }
+    }
+    .about-me-container{
+        hr{
+            margin: 50px 20px 0 20px;
+        }
+    }
+    .about-me-bottom{
+        padding-bottom: 30px;
+        display: block;
+
+        .icons-container{
+            margin: 0 20px;
+        }
+        .about-me-bg{
+            margin: 40px 20px 0 20px;
+        }
+        p{
+            width: calc(100vw - 40px);
+        }
+        img{
+            margin: 50px 20px 0 20px;
+        }
+    }
+}

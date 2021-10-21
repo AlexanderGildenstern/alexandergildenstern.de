@@ -9,4 +9,6 @@ import { Router } from '@angular/router';
 export class AppComponent {
     constructor(public router: Router) {  }  //public, kann jetzt auch aus dem html teil  constructor wird in Angular zum importiere benutzt.
                                               // public kann von überall geändert werden, router wird eingebunden
+
+                                            
 }

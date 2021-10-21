@@ -33,6 +33,12 @@
             border-color: #1a1a1a;
             font-size: 16px;
             padding-left: 16px;
+            transition: 125ms all ease-in-out;
+            &:hover {
+                border-left-color: #fa2759;
+                border-bottom-color: #fa2759;
+                transition: 125ms all ease-in-out;
+            }
         }
 
         textarea {
@@ -41,6 +47,12 @@
             font-size: 16px;
             padding-left: 16px;
             resize: none;
+            transition: 125ms all ease-in-out;
+            &:hover {
+                border-left-color: #fa2759;
+                border-bottom-color: #fa2759;
+                transition: 125ms all ease-in-out;
+            }
         }
     }
 
@@ -57,7 +69,42 @@
     }
 }
 
-.btn-send {
+.btn-contact {
     width: 700px;
     text-align: end;
+    
+    button{
+        transition: 125ms all ease-in-out;
+        &:hover{
+            transition: 125ms all ease-in-out;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .contact-me-bg{
+        padding: 0;
+        height: auto;
+        p {
+            font-size: 14px;
+            padding: 0 20px;
+        }
+        label{
+            padding: 10px 0;
+        }
+        input{
+            padding-left: 10px;
+            font-size: 14px;
+        }
+        form{
+            width: calc(100vw - 40px);
+        }
+        button{
+            padding: 20px 60px;
+            margin: 20px 0 60px 0;
+        }
+    }
+    .btn-contact{
+        width: auto;
+    }
 }

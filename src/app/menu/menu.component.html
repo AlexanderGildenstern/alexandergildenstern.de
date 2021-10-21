@@ -1,11 +1,22 @@
 <header [class.headerDark]="darkMode">
-    <img *ngIf="!darkMode" routerLink="/" src="assets/img/logo.png" alt="logo"> <!-- *ngIf if abfrage, weißes logo wird nur angezeigt wenn kein darkmode ist.  -->
+
+    <img *ngIf="!darkMode" routerLink="/" src="assets/img/logo.png" alt="logo">
+
+    <!-- *ngIf if abfrage, weißes logo wird nur angezeigt wenn kein darkmode ist.  -->
     <img *ngIf="darkMode" routerLink="/" src="assets/img/logo-black.png" alt="logo">
-    <div [class.darkLinks]="darkMode">  <!-- div container bekommt die classe darkLinks, wenn darkMode true ist -->
+
+    <div [class.darkLinks]="darkMode" class="menu-links">
+        <!-- div container bekommt die classe darkLinks, wenn darkMode true ist -->
         <a [class.primary]="!darkMode" routerLink="/">Home</a>
         <a href="#about">About</a>
         <a href="#myWork">Portfolio</a>
         <!-- <a routerLink="/data-protection">Data-Protection</a>
         <a routerLink="/imprint">Imprint</a> -->
     </div>
+
+    <div onclick="navslide()" class="burger disable">
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+
 </header>
