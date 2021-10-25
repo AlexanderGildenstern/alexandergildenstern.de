@@ -2,20 +2,23 @@
     <h2>My work</h2>
     <div class="my-work-btn">
         <div class="btns-left">
-            <button class="btn-primary">All</button>
-            <button class="btn-primary">Angular</button>
+            <button (click)="show('all')" class="btn-primary">All</button>
+            <button (click)="show('angular')" class="btn-primary">Angular</button>
         </div>
         <div class="btns-right">
-            <button class="btn-primary">Java Script</button>
-            <button class="btn-primary">Wordpress</button>
+            <button (click)="show('javascript')" class="btn-primary">Java Script</button>
+            <button (click)="show('wordpress')" class="btn-primary">Wordpress</button>
         </div>
     </div>
-    <div>
-        <img src="assets/img/code.jpg" alt="">
-        <img src="assets/img/code.jpg" alt="">
-    </div>
-    <div>
-        <img src="assets/img/code.jpg" alt="">
-        <img src="assets/img/code.jpg" alt="">
+    <div class="flex">
+        <div *ngFor="let project of categories">
+            <div class="bg" style='background-image: url("{{project.img}}")'>
+                <div class="overlay">
+                    <h3>{{project.name}}</h3>
+                    <p>{{project.description}}</p>
+                    <a class="overlay-btn" href="{{project.href}}">Try it out!</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

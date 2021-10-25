@@ -13,10 +13,44 @@
         <!-- <a routerLink="/data-protection">Data-Protection</a>
         <a routerLink="/imprint">Imprint</a> -->
     </div>
-
-    <div onclick="navslide()" class="burger disable">
+    
+    <!-- White Burger menu -->
+    <div (click)="snav.toggle()" class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
+
+        <mat-sidenav-container >
+            <mat-sidenav #snav mode="side" [fixedInViewport]="true" position="end">
+                <mat-nav-list>
+                    <a #snav mode="side" mat-list-item>Close</a>
+                    <a href="#home" mat-list-item>HOME</a>
+                    <a href="#mySkills" mat-list-item>SKILLS</a>
+                    <a href="#myWork" mat-list-item>MY WORK</a>
+                    <a href="#about" mat-list-item>ABOUT</a>
+                </mat-nav-list>
+            </mat-sidenav>
+        </mat-sidenav-container>
+
     </div>
+
+    <!-- Black Burger menu -->
+    <div *ngIf="darkMode" (click)="snav.toggle()" class="burger-black">
+        <div class="line1"></div>
+        <div class="line2"></div>
+
+        <mat-sidenav-container>
+            <mat-sidenav #snav mode="side" [fixedInViewport]="true" position="end">
+                <mat-nav-list>
+                    <a #snav mode="side" mat-list-item>Close</a>
+                    <a  href="#home" mat-list-item>HOME</a>
+                    <a href="#mySkills" mat-list-item>SKILLS</a>
+                    <a href="#myWork" mat-list-item>MY WORK</a>
+                    <a href="#about" mat-list-item>ABOUT</a>
+                </mat-nav-list>
+            </mat-sidenav>
+        </mat-sidenav-container>
+
+    </div>
+
 
 </header>

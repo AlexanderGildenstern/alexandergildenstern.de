@@ -52,6 +52,9 @@ h2{
 p{
     font-size: 18px;
 }
+.flex{
+    display: flex;
+}
 .primary{
     color: #fa2759!important;
 }
@@ -97,4 +100,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .disable{
     display: none;
+}
+
+@media only screen and (max-width:800px){
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
+    a{
+        font-size: 14px;
+    }
+    ul, li, td{
+        font-size: 12px;
+    }
 }
