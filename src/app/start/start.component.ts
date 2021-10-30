@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
+  scroll = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  scrollTo(){
+    this.scroll = true;
+    setTimeout(()=> this.scroll = false, 500);
   }
 
 }

@@ -22,6 +22,12 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
+import { environment } from 'src/environments/environment';
+import { AngularFireModule} from '@angular/fire/compat'
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { FormsModule } from '@angular/forms';
+// import { MatDialog } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +41,8 @@ import { MatButtonModule } from '@angular/material/button';
     AboutMeComponent,
     StartComponent,
     ContactMeComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -47,6 +54,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatListModule,
     MatIconModule,
     MatButtonModule,
+    FormsModule,
+  
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

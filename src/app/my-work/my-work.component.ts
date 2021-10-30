@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class MyWorkComponent implements OnInit {
 
   projects = [
-    { name: "sharkie", description: "Javascript based game", img: "http://alexandergildenstern.de/assets/img/Sharkie.PNG", href: "http://alexander-gildenstern.developerakademie.com/Sharkie/index.html", category: "javascript" },
-    { name: "join", description: "Javascript based Kanban-Board", img: "http://alexandergildenstern.de/assets/img/AddTask.PNG", href: "http://alexander-gildenstern.developerakademie.com/Sharkie/index.html", category: "javascript" },
-    { name: "Pokedex", description: "Javascript based Poke API", img: "http://alexandergildenstern.de/assets/img/pokedex.PNG", href: "http://alexander-gildenstern.developerakademie.com/PokeDex/indx.html", category: "javascript" },
-    { name: "Lieferando", description: "Javascript based shopsite", img: "http://alexandergildenstern.de/assets/img/lieferando.PNG", href: "http://alexander-gildenstern.developerakademie.com/Lieferando/index.html", category: "javascript" },
-    { name: "Kitchenlove-by-Anna", description: "Wordpress based with Woocommerce", img: "http://alexandergildenstern.de/assets/img/kitchnlove.PNG", href: "https://kitchenlove-by-anna.de", category: "wordpress" },
-    { name: "Thermimadl", description: "Wordpress based with Woocommerce", img: "http://alexandergildenstern.de/assets/img/thermimadl.PNG", href: "https://thermimadl.com/", category: "wordpress" },
-    { name: "Jana Steinzeit", description: "Wordpress based with Woocommerce", img: "http://alexandergildenstern.de/assets/img/steinzeit.PNG", href: "https://jana-steinzeit.de/", category: "wordpress" },
-    { name: "My Homepage", description: "Angular Website", img: "http://alexandergildenstern.de/assets/img/myHomepage.PNG", href: "/", category: "angular" },
+    { name: "sharkie", description: "Javascript based game", img: "https://alexandergildenstern.de/assets/img/Sharkie.PNG", href: "https://alexander-gildenstern.developerakademie.com/Sharkie/index.html", category: "javascript" },
+    { name: "join", description: "Javascript based Kanban-Board", img: "https://alexandergildenstern.de/assets/img/AddTask.PNG", href: "https://alexander-gildenstern.developerakademie.com/Sharkie/index.html", category: "javascript" },
+    { name: "Pokedex", description: "Javascript based Poke API", img: "https://alexandergildenstern.de/assets/img/pokedex.PNG", href: "https://alexander-gildenstern.developerakademie.com/PokeDex/indx.html", category: "javascript" },
+    { name: "Lieferando", description: "Javascript based shopsite", img: "https://alexandergildenstern.de/assets/img/lieferando.PNG", href: "https://alexander-gildenstern.developerakademie.com/Lieferando/index.html", category: "javascript" },
+    { name: "Kitchenlove-by-Anna", description: "Wordpress based with Woocommerce", img: "https://alexandergildenstern.de/assets/img/kitchnlove.PNG", href: "https://kitchenlove-by-anna.de", category: "wordpress" },
+    { name: "Thermimadl", description: "Wordpress based with Woocommerce", img: "https://alexandergildenstern.de/assets/img/thermimadl.PNG", href: "https://thermimadl.com/", category: "wordpress" },
+    { name: "Jana Steinzeit", description: "Wordpress based with Woocommerce", img: "https://alexandergildenstern.de/assets/img/steinzeit.PNG", href: "https://jana-steinzeit.de/", category: "wordpress" },
+    { name: "My Homepage", description: "Angular Website", img: "https://alexandergildenstern.de/assets/img/myHomepage.PNG", href: "/", category: "angular" },
    
   ];
 

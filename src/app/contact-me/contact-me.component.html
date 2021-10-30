@@ -4,15 +4,16 @@
     <p>Get in touch via the form below, or by emailing <span><a
                 href="mailto:developer@alexandergildenstern.de">developer@alexandergildenstern.de</a></span></p>
 
-    <form onsubmit="contactForm()" return false>
+    <form onsubmit="" return false>
         <label type=”text”>Name<sup>*</sup></label>
-        <input required type="text" placeholder="Enter your name">
+        <input required type="text" [(ngModel)]="message.name" name="name" placeholder="Enter your name">
         <label>Email<sup>*</sup></label>
-        <input required type="email" placeholder="Enter your Email adress">
+        <input required type="email" [(ngModel)]="message.email" name="email" placeholder="Enter your Email adress">
         <label>Message<sup>*</sup></label>
-        <textarea required cols="30" rows="10" placeholder="Enter your message"></textarea>
+        <textarea required cols="30" rows="10" [(ngModel)]="message.message"
+        name="message" placeholder="Enter your message"></textarea>
         <div class="btn-contact">
-            <button class="btn-secondary"  type="submit" value="submit">Send</button>
+            <button class="btn-secondary" (click)="saveMessage()" type="submit" value="submit">Send</button>
         </div>
     </form>
 

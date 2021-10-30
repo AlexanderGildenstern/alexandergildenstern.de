@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ScrollToService } from '../scroll-to.service';
 
 @Component({
   selector: 'app-main-start',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainStartComponent implements OnInit {
 
+  @Output() scrollTo: EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }
