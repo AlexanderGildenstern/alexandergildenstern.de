@@ -16,6 +16,7 @@ export class MyWorkComponent implements OnInit {
     { name: "Thermimadl", description: "Wordpress based with Woocommerce", img: "https://alexandergildenstern.de/assets/img/thermimadl.png", href: "https://thermimadl.com/", category: "wordpress" },
     { name: "Jana Steinzeit", description: "Wordpress based with Woocommerce", img: "https://alexandergildenstern.de/assets/img/steinzeit.png", href: "https://jana-steinzeit.de/", category: "wordpress" },
     { name: "My Homepage", description: "Angular Website", img: "https://alexandergildenstern.de/assets/img/myHomepage.png", href: "/", category: "angular" },
+    { name: "Ring of Fire", description: "Angular based game", img: "https://alexandergildenstern.de/assets/img/startbox.png", href: "https://ring-of-fire-d5639.web.app/", category: "angular" },
    
   ];
 
